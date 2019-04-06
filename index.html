@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Battleship</title>
+</head>
+
+<body>
+    <div id="root_container" class="container">
+        <div id="row_setup" class="row">
+            <div class="col-sm">
+                <h1>Battleship</h1>
+                <label>Choose your board size</label>
+                <select id="board_size_selector"></select>
+                <label>Choose how many boats</label>
+                <select id="boat_quantity_selector">
+                    <option value="1">1</option>
+                </select>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons" style="display: block;">
+                    <label id="place_your_boats_button" class="btn btn-primary btn-sm">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Place yer boats
+                    </label>
+                    <label id="let_them_decide_button" class="btn btn-primary btn-sm">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Let 'em decide
+                    </label>
+                </div>
+                <div id="timeDiv"></div>
+            </div>
+            <div id="row_bootstrap" class="row my-4" style="width: 100%;"></div>
+        </div>
+        <div id="row_bootstrap_results" class="row"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

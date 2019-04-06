@@ -1,0 +1,42 @@
+body {
+    background-image: url(images/Blue-Camo17.jpg);
+    background-repeat: repeat-y;
+    background-size: auto;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+}
+
+td:hover, h2:hover {
+    background-color: yellow;
+}
+
+.boatLeft {
+    background-image:url(images/left_small.jpg);
+    width: 28px;
+    height: 28px;
+}
+
+.boatRight {
+    background-image:url(images/right_small.jpg);
+    width: 28px;
+    height: 28px;
+}
+
+.boatLeftHit {
+    background-image:url(images/left_bullet.jpg);
+    width: 28px;
+    height: 28px;
+}
+
+.boatRightHit {
+    background-image:url(images/right_bullet.jpg);
+    width: 28px;
+    height: 28px;
+}
+
+#boats_placed_button {
+    margin: 5px;
+}
